@@ -166,7 +166,13 @@ resources/
 
 ## License
 
-Images are sourced from [Pexels](https://www.pexels.com/) under the [Pexels License](https://www.pexels.com/license/), which permits free use without attribution.
+Images are currently sourced from 
+
+weatherfanartcode (kodi) (2014)
+weather.multi (kodi) (2026)
+old archive (mediaportal) (2020)
+
+[Pexels](https://www.pexels.com/) under the [Pexels License](https://www.pexels.com/license/), which permits free use without attribution.
 
 Addon code and structure: MIT License — see `LICENSE` file.
 
