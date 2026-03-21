@@ -66,9 +66,9 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 | 2 | Hurricane | 10 | 10 | ✔ good |
 | 3 | Severe Thunderstorms | 15 |15 | ✔ good |
 | 4 | Thunderstorms | 17 | 15 | ✔ good |
-| 5 | Mixed Rain and Snow | 7 | 10–15 | ▲ needs +3 to +8 |
-| 6 | Mixed Rain and Sleet | 7 | 10–15 | ▲ needs +3 to +8 |
-| 7 | Mixed Snow and Sleet | 8 | 10–15 | ▲ needs +2 to +7 |
+| 5 | Mixed Rain and Snow | 20 | 15 | ✔ good |
+| 6 | Mixed Rain and Sleet | 20 | 15 | ✔ good |
+| 7 | Mixed Snow and Sleet | 20 | 15 | ✔ good |
 | 8 | Freezing Drizzle | 12 | 10–15 | ✔ good |
 | 9 | Drizzle | 7 | 10–15 | ▲ needs +3 to +8 |
 | 10 | Freezing Rain | 13 | 10–15 | ✔ good |
