@@ -64,7 +64,7 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 | 0 | Tornado | 11 | 5–10 | ✔ slightly high but acceptable |
 | 1 | Tropical Storm | 11 | 5–10 | ✔ slightly high |
 | 2 | Hurricane | 13 | 5–10 | ▲ reduce or leave as-is |
-| 3 | Severe Thunderstorms | 9 | 10–15 | ▲ needs +1 to +6 |
+| 3 | Severe Thunderstorms | 15 | 10–15 | ✔ good |
 | 4 | Thunderstorms | 9 | 10–15 | ▲ needs +1 to +6 |
 | 5 | Mixed Rain and Snow | 7 | 10–15 | ▲ needs +3 to +8 |
 | 6 | Mixed Rain and Sleet | 7 | 10–15 | ▲ needs +3 to +8 |
