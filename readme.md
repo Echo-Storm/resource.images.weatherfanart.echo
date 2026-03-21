@@ -72,7 +72,7 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 | 8 | Freezing Drizzle | 20 | 15 | ✔ good |
 | 9 | Drizzle | 18 | 15 | ✔ good |
 | 10 | Freezing Rain | 20 | 15 | ✔ good |
-| 11 | Light Showers (Night) | 15 | 20–30 | ▲ needs +5 to +15 |
+| 11 | Light Showers (Night) | 23 | 20 | ✔ good |
 | 12 | Heavy Showers (Day) | 14 | 20–30 | ▲ needs +6 to +16 |
 | 13 | Snow Flurries | 12 | 15–25 | ▲ needs +3 to +13 |
 | 14 | Light Snow Showers | 11 | 15–25 | ▲ needs +4 to +14 |
