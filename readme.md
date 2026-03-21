@@ -61,11 +61,11 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 
 | Code | Condition | Files | Target | Status |
 |------|-----------|-------|--------|--------|
-| 0 | Tornado | 11 | 5–10 | ✔ good |
-| 1 | Tropical Storm | 11 | ✔ good |
-| 2 | Hurricane | 13 | ✔ good |
+| 0 | Tornado | 11 | 10 | ✔ good |
+| 1 | Tropical Storm | 10 | ✔ good |
+| 2 | Hurricane | 10 | ✔ good |
 | 3 | Severe Thunderstorms | 15 | ✔ good |
-| 4 | Thunderstorms | 17 | 10–15 | ✔ good |
+| 4 | Thunderstorms | 17 | 15 | ✔ good |
 | 5 | Mixed Rain and Snow | 7 | 10–15 | ▲ needs +3 to +8 |
 | 6 | Mixed Rain and Sleet | 7 | 10–15 | ▲ needs +3 to +8 |
 | 7 | Mixed Snow and Sleet | 8 | 10–15 | ▲ needs +2 to +7 |
