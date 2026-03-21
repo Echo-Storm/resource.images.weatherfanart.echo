@@ -70,7 +70,7 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 | 6 | Mixed Rain and Sleet | 20 | 15 | ✔ good |
 | 7 | Mixed Snow and Sleet | 20 | 15 | ✔ good |
 | 8 | Freezing Drizzle | 20 | 15 | ✔ good |
-| 9 | Drizzle | 7 | 10–15 | ▲ needs +3 to +8 |
+| 9 | Drizzle | 18 | 15 | ✔ good |
 | 10 | Freezing Rain | 20 | 15 | ✔ good |
 | 11 | Light Showers (Night) | 15 | 20–30 | ▲ needs +5 to +15 |
 | 12 | Heavy Showers (Day) | 14 | 20–30 | ▲ needs +6 to +16 |
