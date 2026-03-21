@@ -61,17 +61,17 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 
 | Code | Condition | Files | Target | Status |
 |------|-----------|-------|--------|--------|
-| 0 | Tornado | 11 | 5–10 | ✔ slightly high but acceptable |
-| 1 | Tropical Storm | 11 | 5–10 | ✔ slightly high |
-| 2 | Hurricane | 13 | 5–10 | ▲ reduce or leave as-is |
-| 3 | Severe Thunderstorms | 9 | 10–15 | ▲ needs +1 to +6 |
-| 4 | Thunderstorms | 9 | 10–15 | ▲ needs +1 to +6 |
-| 5 | Mixed Rain and Snow | 7 | 10–15 | ▲ needs +3 to +8 |
-| 6 | Mixed Rain and Sleet | 7 | 10–15 | ▲ needs +3 to +8 |
-| 7 | Mixed Snow and Sleet | 8 | 10–15 | ▲ needs +2 to +7 |
-| 8 | Freezing Drizzle | 12 | 10–15 | ✔ good |
+| 0 | Tornado | 11 | 10 | ✔ good |
+| 1 | Tropical Storm | 10 | 10 | ✔ good |
+| 2 | Hurricane | 10 | 10 | ✔ good |
+| 3 | Severe Thunderstorms | 15 |15 | ✔ good |
+| 4 | Thunderstorms | 17 | 15 | ✔ good |
+| 5 | Mixed Rain and Snow | 20 | 15 | ✔ good |
+| 6 | Mixed Rain and Sleet | 20 | 15 | ✔ good |
+| 7 | Mixed Snow and Sleet | 20 | 15 | ✔ good |
+| 8 | Freezing Drizzle | 20 | 15 | ✔ good |
 | 9 | Drizzle | 7 | 10–15 | ▲ needs +3 to +8 |
-| 10 | Freezing Rain | 13 | 10–15 | ✔ good |
+| 10 | Freezing Rain | 20 | 15 | ✔ good |
 | 11 | Light Showers (Night) | 15 | 20–30 | ▲ needs +5 to +15 |
 | 12 | Heavy Showers (Day) | 14 | 20–30 | ▲ needs +6 to +16 |
 | 13 | Snow Flurries | 12 | 15–25 | ▲ needs +3 to +13 |
