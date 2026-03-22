@@ -61,7 +61,7 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 
 | Code | Condition | Files | Target | Status |
 |------|-----------|-------|--------|--------|
-| 0 | Tornado | 11 | 10 | ✔ good |
+| 0 | Tornado | 12 | 10 | ✔ good |
 | 1 | Tropical Storm | 10 | 10 | ✔ good |
 | 2 | Hurricane | 10 | 10 | ✔ good |
 | 3 | Severe Thunderstorms | 15 |15 | ✔ good |
@@ -73,11 +73,12 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 | 9 | Drizzle | 18 | 15 | ✔ good |
 | 10 | Freezing Rain | 20 | 15 | ✔ good |
 | 11 | Light Showers (Night) | 23 | 20 | ✔ good |
-| 12 | Heavy Showers (Day) | 14 | 20–30 | ▲ needs +6 to +16 |
-| 13 | Snow Flurries | 12 | 15–25 | ▲ needs +3 to +13 |
-| 14 | Light Snow Showers | 11 | 15–25 | ▲ needs +4 to +14 |
-| 15 | Blowing Snow | 10 | 10–15 | ✔ good |
-| 16 | Snow | 12 | 15–25 | ▲ needs +3 to +13 |
+| 12 | Heavy Showers (Day) | 33 | 30 | ✔ good |
+| 13 | Snow Flurries |  43 | 25 | ✔ good |
+| 14 | Light Snow Showers | 43 | 25 | ✔ good |
+| 15 | Blowing Snow | 43 | 25 | ✔ good |
+| 16 | Snow | 43 | 25 | ✔ good |
+----------------------
 | 17 | Hail | 13 | 5–10 | ▼ slightly high |
 | 18 | Sleet | 17 | 10–15 | ▼ slightly high |
 | 19 | Dust | 10 | 3–8 | ▼ high |
