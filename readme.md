@@ -90,7 +90,7 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 |   14 | Light Snow Showers               |    43 | 25     | ✔ good                          |   ✔    |   ✗    |
 |   15 | Blowing Snow                     |    43 | 25     | ✔ good                          |   ✔    |   ✗    |
 |   16 | Snow                             |    43 | 25     | ✔ good                          |   ✔    |   ✗    |
-|   17 | Hail                             |    13 | 5–10   | ▼ slightly high                 |   ✗    |   ✗    |
+|   17 | Hail                             |    13 | 10     | ✔ good                           |   ✗    |   ✗    |
 |   18 | Sleet                            |    17 | 10–15  | ▼ slightly high                 |   ✗    |   ✗    |
 |   19 | Dust                             |    10 | 3–8    | ▼ high                          |   ✗    |   ✗    |
 |   20 | Foggy                            |    48 | 10–20  | ▼ extremely high — needs cull   |   ✗    |   ✗    |
