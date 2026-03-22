@@ -76,8 +76,8 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 |     0 | Tornado                         |    12 |     10 | ✔ good       |   —    |   ✔    |   ✗    |
 |     1 | Tropical Storm                  |    10 |     10 | ✔ good       |   —    |   ✔    |   ✗    |
 |     2 | Hurricane                       |    10 |     10 | ✔ good       |   —    |   ✔    |   ✗    |
-|     3 | Severe Thunderstorms            |    15 |     15 | ✔ good       |   —    |   ✔    |   ✗    |
-|     4 | Thunderstorms                   |    17 |     15 | ✔ good       |   —    |   ✔    |   ✗    |
+|     3 | Severe Thunderstorms            |    15 |     15 | ✔ good       |   —    |   ✗    |   ✗    |
+|     4 | Thunderstorms                   |    17 |     15 | ✔ good       |   —    |   ✗    |   ✗    |
 |     5 | Mixed Rain and Snow             |    20 |     15 | ✔ good       |   +    |   ✔    |   ✗    |
 |     6 | Mixed Rain and Sleet            |    20 |     15 | ✔ good       |   5    |   ✔    |   ✗    |
 |     7 | Mixed Snow and Sleet            |    20 |     15 | ✔ good       |   5    |   ✔    |   ✗    |
@@ -94,16 +94,16 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 |    18 | Sleet                           |    20 |     15 | ✔ good       |   5    |   ✔    |   ✗    |
 |    19 | Dust                            |    13 |     10 | ✔ good       |   —    |   ✔    |   ✗    |
 |    20 | Foggy                           |    25 |     20 | ✔ good       |   +    |   ✔    |   ✗    |
-|    21 | Haze                            |    25 |     15 | ✔ good       |   21   |   ✔    |   ✗    |
-|    22 | Smoky                           |     5 |    3–8 | ✔ perfect    |   —    |   ✗    |   ✗    |
-|    23 | Blustery                        |    13 |  10–15 | ✔ good       |   —    |   ✗    |   ✗    |
-|    24 | Windy                           |    14 |  10–15 | ✔ good       |   —    |   ✗    |   ✗    |
-|    25 | Cold                            |    21 |  15–25 | ✔ good       |   —    |   ✗    |   ✗    |
-|    26 | Cloudy                          |    24 |  30–50 | ▲ needs more |   —    |   ✗    |   ✗    |
+|    21 | Haze                            |    25 |     15 | ✔ good       |   20   |   ✔    |   ✗    |
+|    22 | Smoky                           |    10 |     10 | ✔ good       |   —    |   ✔    |   ✗    |
+|    23 | Blustery                        |    35 |     20 | ✔ good       |   +    |   ✔    |   ✗    |
+|    24 | Windy                           |    35 |     20 | ✔ good       |   23   |   ✔    |   ✗    |
+|    25 | Cold                            |    32 |     25 | ✔ good       |   —    |   ✔    |   ✗    |
+|    26 | Cloudy                          |    53 |     50 | ✔ good       |   +    |   ✔    |   ✗    |
 |    27 | Mostly Cloudy (Night)           |    11 |  20–30 | ▲ needs more |   —    |   ✗    |   ✗    |
-|    28 | Mostly Cloudy (Day)             |    23 |  20–30 | ✔ good       |   —    |   ✗    |   ✗    |
+|    28 | Mostly Cloudy (Day)             |    53 |     30 | ✔ good       |   26   |   ✔    |   ✗    |
 |    29 | Partly Cloudy (Night)           |     9 |  20–30 | ▲ needs more |   —    |   ✗    |   ✗    |
-|    30 | Partly Cloudy (Day)             |    42 |  30–50 | ✔ strong     |   —    |   ✗    |   ✗    |
+|    30 | Partly Cloudy (Day)             |    53 |     50 | ✔ good       |   26   |   ✔    |   ✗    |
 |    31 | Clear (Night)                   |    23 |  20–30 | ✔ good       |   —    |   ✗    |   ✗    |
 |    32 | Sunny                           |    34 |  20–30 | ▼ high       |   —    |   ✗    |   ✗    |
 |    33 | Fair (Night)                    |    10 |  10–15 | ✔ good       |   —    |   ✗    |   ✗    |
@@ -117,7 +117,7 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 |    41 | Heavy Snow (Night)              |    13 |  15–25 | ▲ needs more |   —    |   ✗    |   ✗    |
 |    42 | Scattered Snow Showers          |    11 |  15–25 | ▲ needs more |   —    |   ✗    |   ✗    |
 |    43 | Heavy Snow (Day)                |    18 |  15–25 | ✔ good       |   —    |   ✗    |   ✗    |
-|    44 | Partly Cloudy                   |    33 |  30–50 | ✔ strong     |   —    |   ✗    |   ✗    |
+|    44 | Partly Cloudy                   |    53 |     50 | ✔ good       |   26   |   ✔    |   ✗    |
 |    45 | Thundershowers                  |    10 |  10–15 | ✔ good       |   —    |   ✗    |   ✗    |
 |    46 | Snow Showers                    |    11 |  15–25 | ▲ needs more |   —    |   ✗    |   ✗    |
 |    47 | Isolated Thundershowers         |     6 |  10–15 | ▲ needs more |   —    |   ✗    |   ✗    |
