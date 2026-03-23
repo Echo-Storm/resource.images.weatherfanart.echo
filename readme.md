@@ -76,8 +76,8 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 |     0 | Tornado                         |    12 |     10 | ✔ good       |   —    |   ✔    |   ✗    |
 |     1 | Tropical Storm                  |    10 |     10 | ✔ good       |   —    |   ✔    |   ✗    |
 |     2 | Hurricane                       |    10 |     10 | ✔ good       |   —    |   ✔    |   ✗    |
-|     3 | Severe Thunderstorms            |    15 |     15 | ✔ good       |   —    |   ✗    |   ✗    |
-|     4 | Thunderstorms                   |    17 |     15 | ✔ good       |   —    |   ✗    |   ✗    |
+|     3 | Severe Thunderstorms            |    54 |     15 | ✔ good       |   +    |   ✔    |   ✗    |
+|     4 | Thunderstorms                   |    54 |     15 | ✔ good       |   3    |   ✔    |   ✗    |
 |     5 | Mixed Rain and Snow             |    20 |     15 | ✔ good       |   +    |   ✔    |   ✗    |
 |     6 | Mixed Rain and Sleet            |    20 |     15 | ✔ good       |   5    |   ✔    |   ✗    |
 |     7 | Mixed Snow and Sleet            |    20 |     15 | ✔ good       |   5    |   ✔    |   ✗    |
@@ -110,17 +110,17 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 |    34 | Fair (Day)                      |    12 |  10–15 | ✔ good       |   —    |   ✗    |   ✗    |
 |    35 | Mixed Rain and Hail             |     7 |   5–10 | ✔ good       |   —    |   ✗    |   ✗    |
 |    36 | Hot                             |    11 |  10–15 | ✔ good       |   —    |   ✗    |   ✗    |
-|    37 | Isolated Thunderstorms          |     8 |  10–15 | ▲ needs more |   —    |   ✗    |   ✗    |
-|    38 | Scattered Thunderstorms (Night) |     7 |  10–15 | ▲ needs more |   —    |   ✗    |   ✗    |
-|    39 | Scattered Thunderstorms (Day)   |     9 |  10–15 | ▲ needs more |   —    |   ✗    |   ✗    |
+|    37 | Isolated Thunderstorms          |    54 |     15 | ✔ good       |   3    |   ✔    |   ✗    |
+|    38 | Scattered Thunderstorms (Night) |    54 |     15 | ✔ good       |   3    |   ✔    |   ✗    |
+|    39 | Scattered Thunderstorms (Day)   |    54 |     15 | ✔ good       |   3    |   ✔    |   ✗    |
 |    40 | Scattered Showers               |     9 |  15–25 | ▲ needs more |   —    |   ✗    |   ✗    |
 |    41 | Heavy Snow (Night)              |    13 |  15–25 | ▲ needs more |   —    |   ✗    |   ✗    |
 |    42 | Scattered Snow Showers          |    11 |  15–25 | ▲ needs more |   —    |   ✗    |   ✗    |
 |    43 | Heavy Snow (Day)                |    18 |  15–25 | ✔ good       |   —    |   ✗    |   ✗    |
 |    44 | Partly Cloudy                   |    53 |     50 | ✔ good       |   26   |   ✔    |   ✗    |
-|    45 | Thundershowers                  |    10 |  10–15 | ✔ good       |   —    |   ✗    |   ✗    |
-|    46 | Snow Showers                    |    11 |  15–25 | ▲ needs more |   —    |   ✗    |   ✗    |
-|    47 | Isolated Thundershowers         |     6 |  10–15 | ▲ needs more |   —    |   ✗    |   ✗    |
+|    45 | Thundershowers                  |    54 |     15 | ✔ good       |   3    |   ✔    |   ✗    |
+|    46 | Snow Showers                    |    43 |     25 | ✔ good       |   13   |   ✔    |   ✗    |
+|    47 | Isolated Thundershowers         |    54 |     15 | ✔ good       |   3    |   ✔    |   ✗    |
 |    na | Not Available                   |     3 |    3–5 | ✔ fine       |   —    |   ✗    |   ✗    |
 | alert | Weather Alert                   |     0 |    3–5 | ▲ needs more |   —    |   ✗    |   ✗    |
 
