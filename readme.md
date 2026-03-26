@@ -19,13 +19,9 @@ A resource addon providing high-quality background and fanart images for all sta
 
 ## Overview
 
-This addon supplies a curated set of photographic fanart images organized by weather condition code. When paired with a compatible weather addon, Kodi can display a contextual full-screen or background image that matches the current weather condition rather than a static skin default.
+This addon supplies a curated set of photographic fanart images organized by weather condition code. When paired with weather.kodiweather 2.4.2+, Kodi displays contextual full-screen background images matching current weather conditions.
 
 Images are sourced from free-use photography sites and converted to Kodi-compatible formats. The maintainer is currently using [Pexels](https://www.pexels.com/), but any rights-cleared source is acceptable.
-
-> **Status: Work in Progress**  
-> Image conversion is ongoing. Coverage varies by condition—see the [Image Coverage](#image-coverage) table below for current status.  
-> Contributions welcome. If you'd like to add images for underrepresented conditions, see [Contributing](#contributing).
 
 ---
 
@@ -36,7 +32,7 @@ Images are sourced from free-use photography sites and converted to Kodi-compati
 | Kodi         | 19 (Matrix) or later                                     |
 | Python       | Not required (resource addon)                            |
 | Platform     | Any platform Kodi supports                               |
-| Paired addon | Any weather addon that resolves fanart via resource packs |
+| Paired addon | weather.kodiweather 2.4.2+ (handles condition mapping)   |
 
 ---
 
@@ -67,82 +63,101 @@ Kodi should enable the addon automatically on install. Verify under *Settings �
 
 ## Image Coverage
 
-Images are organized by Yahoo weather condition code. Each condition maps to a numbered folder under `resources/`.
+This addon uses 21 master image folders to cover all 50 weather condition codes. The weather.kodiweather addon (2.4.2+) handles the mapping from condition codes to master folders, eliminating duplicate storage.
 
-> **Note on ambiguous codes:** The Yahoo/Kodi spec lists codes 11 & 12 both as "showers", codes 38 & 39 both as "scattered thunderstorms", and codes 41 & 43 both as "heavy snow". Based on how Yahoo's own implementation mapped icons, this pack intentionally treats these as distinct day/night or light/heavy pairs. The skin and weather addon will be updated to route these codes accordingly.
+### Master Folders
 
-|  Code | Condition                       | Files | Target | Status | Clone? | Pass 1 | Pass 2 |
-| ----: | ------------------------------- | ----: | -----: | ------ | :----: | :----: | :----: |
-|     0 | Tornado                         |    12 |     10 | ✔ good |   —    |   ✔    |   ✗    |
-|     1 | Tropical Storm                  |    10 |     10 | ✔ good |   —    |   ✔    |   ✗    |
-|     2 | Hurricane                       |    10 |     10 | ✔ good |   —    |   ✔    |   ✗    |
-|     3 | Severe Thunderstorms            |    54 |     15 | ✔ good |   +    |   ✔    |   ✗    |
-|     4 | Thunderstorms                   |    54 |     15 | ✔ good |   3    |   ✔    |   ✗    |
-|     5 | Mixed Rain and Snow             |    20 |     15 | ✔ good |   +    |   ✔    |   ✗    |
-|     6 | Mixed Rain and Sleet            |    20 |     15 | ✔ good |   5    |   ✔    |   ✗    |
-|     7 | Mixed Snow and Sleet            |    20 |     15 | ✔ good |   5    |   ✔    |   ✗    |
-|     8 | Freezing Drizzle                |    20 |     15 | ✔ good |   5    |   ✔    |   ✗    |
-|     9 | Drizzle                         |    18 |     15 | ✔ good |   —    |   ✔    |   ✗    |
-|    10 | Freezing Rain                   |    20 |     15 | ✔ good |   5    |   ✔    |   ✗    |
-|    11 | Light Showers (Night)           |    23 |     20 | ✔ good |   —    |   ✔    |   ✗    |
-|    12 | Heavy Showers (Day)             |    33 |     30 | ✔ good |   +    |   ✔    |   ✗    |
-|    13 | Snow Flurries                   |    43 |     25 | ✔ good |   +    |   ✔    |   ✗    |
-|    14 | Light Snow Showers              |    43 |     25 | ✔ good |   13   |   ✔    |   ✗    |
-|    15 | Blowing Snow                    |    43 |     25 | ✔ good |   13   |   ✔    |   ✗    |
-|    16 | Snow                            |    43 |     25 | ✔ good |   13   |   ✔    |   ✗    |
-|    17 | Hail                            |    16 |     10 | ✔ good |   +    |   ✔    |   ✗    |
-|    18 | Sleet                           |    20 |     15 | ✔ good |   5    |   ✔    |   ✗    |
-|    19 | Dust                            |    13 |     10 | ✔ good |   —    |   ✔    |   ✗    |
-|    20 | Foggy                           |    25 |     20 | ✔ good |   +    |   ✔    |   ✗    |
-|    21 | Haze                            |    25 |     15 | ✔ good |   20   |   ✔    |   ✗    |
-|    22 | Smoky                           |    10 |     10 | ✔ good |   —    |   ✔    |   ✗    |
-|    23 | Blustery                        |    35 |     20 | ✔ good |   +    |   ✔    |   ✗    |
-|    24 | Windy                           |    35 |     20 | ✔ good |   23   |   ✔    |   ✗    |
-|    25 | Cold                            |    32 |     25 | ✔ good |   —    |   ✔    |   ✗    |
-|    26 | Cloudy                          |    53 |     50 | ✔ good |   +    |   ✔    |   ✗    |
-|    27 | Mostly Cloudy (Night)           |    54 |     50 | ✔ good |   +    |   ✔    |   ✗    |
-|    28 | Mostly Cloudy (Day)             |    53 |     30 | ✔ good |   26   |   ✔    |   ✗    |
-|    29 | Partly Cloudy (Night)           |    54 |     50 | ✔ good |   27   |   ✔    |   ✗    |
-|    30 | Partly Cloudy (Day)             |    53 |     50 | ✔ good |   26   |   ✔    |   ✗    |
-|    31 | Clear (Night)                   |    33 |     30 | ✔ good |   +    |   ✔    |   ✗    |
-|    32 | Sunny                           |    54 |     30 | ✔ good |   +    |   ✔    |   ✗    |
-|    33 | Fair (Night)                    |    33 |     30 | ✔ good |   33   |   ✔    |   ✗    |
-|    34 | Fair (Day)                      |    54 |     30 | ✔ good |   32   |   ✔    |   ✗    |
-|    35 | Mixed Rain and Hail             |    16 |     10 | ✔ good |   17   |   ✔    |   ✗    |
-|    36 | Hot                             |    54 |     30 | ✔ good |   32   |   ✔    |   ✗    |
-|    37 | Isolated Thunderstorms          |    54 |     15 | ✔ good |   3    |   ✔    |   ✗    |
-|    38 | Scattered Thunderstorms (Night) |    54 |     15 | ✔ good |   3    |   ✔    |   ✗    |
-|    39 | Scattered Thunderstorms (Day)   |    54 |     15 | ✔ good |   3    |   ✔    |   ✗    |
-|    40 | Scattered Showers               |    33 |     25 | ✔ good |   12   |   ✔    |   ✗    |
-|    41 | Heavy Snow (Night)              |    43 |     25 | ✔ good |   13   |   ✔    |   ✗    |
-|    42 | Scattered Snow Showers          |    43 |     25 | ✔ good |   13   |   ✔    |   ✗    |
-|    43 | Heavy Snow (Day)                |    43 |     25 | ✔ good |   13   |   ✔    |   ✗    |
-|    44 | Partly Cloudy                   |    53 |     50 | ✔ good |   26   |   ✔    |   ✗    |
-|    45 | Thundershowers                  |    54 |     15 | ✔ good |   3    |   ✔    |   ✗    |
-|    46 | Snow Showers                    |    43 |     25 | ✔ good |   13   |   ✔    |   ✗    |
-|    47 | Isolated Thundershowers         |    54 |     15 | ✔ good |   3    |   ✔    |   ✗    |
-|    na | Not Available                   |    12 |      5 | ✔ good |   —    |   ✔    |   ✗    |
-| alert | Weather Alert                   |    10 |      5 | ✔good  |   —    |   ✔    |   ✗    |
+| Folder | Condition | Files | Covers Codes |
+|-------:|-----------|------:|--------------|
+| 0 | Tornado | 10 | 0 |
+| 1 | Tropical Storm | 10 | 1 |
+| 2 | Hurricane | 10 | 2 |
+| 3 | Thunderstorms | 54 | 3, 4, 37, 38, 39, 45, 47 |
+| 5 | Mixed Precip / Freezing | 20 | 5, 6, 7, 8, 10, 18 |
+| 9 | Drizzle | 18 | 9 |
+| 11 | Light Showers (Night) | 23 | 11 |
+| 12 | Heavy Showers (Day) | 33 | 12, 40 |
+| 13 | Snow | 43 | 13, 14, 15, 16, 41, 42, 43, 46 |
+| 17 | Hail | 16 | 17, 35 |
+| 19 | Dust | 13 | 19 |
+| 20 | Foggy | 25 | 20, 21 |
+| 22 | Smoky | 10 | 22 |
+| 23 | Windy | 35 | 23, 24 |
+| 25 | Cold | 32 | 25 |
+| 26 | Cloudy (Day) | 53 | 26, 28, 30, 44 |
+| 27 | Cloudy (Night) | 54 | 27, 29 |
+| 31 | Clear (Night) | 34 | 31, 33 |
+| 32 | Sunny / Fair / Hot | 54 | 32, 34, 36 |
+| na | Not Available | 12 | na |
+| alert | Weather Alert | 10 | alert |
 
-**Legend**
+**Total: 569 files across 21 folders (931 MB)**
 
-| Symbol | Meaning                              |
-|:------:|--------------------------------------|
-|   ✔    | At or near target / complete         |
-|   ▲    | Needs more images                    |
-|   ▼    | Overpopulated / needs cull           |
-|   ✗    | Not yet started                      |
-|   —    | No cloning needed                    |
-|   +    | Master clone source                  |
-|  *n*   | Cloned from directory *n*            |
+### Condition Code Mapping
+
+The weather addon redirects these codes to master folders:
+
+| Code | Condition | → Master |
+|-----:|-----------|:--------:|
+| 4 | Thunderstorms | 3 |
+| 6 | Mixed Rain and Sleet | 5 |
+| 7 | Mixed Snow and Sleet | 5 |
+| 8 | Freezing Drizzle | 5 |
+| 10 | Freezing Rain | 5 |
+| 14 | Light Snow Showers | 13 |
+| 15 | Blowing Snow | 13 |
+| 16 | Snow | 13 |
+| 18 | Sleet | 5 |
+| 21 | Haze | 20 |
+| 24 | Windy | 23 |
+| 28 | Mostly Cloudy (Day) | 26 |
+| 29 | Partly Cloudy (Night) | 27 |
+| 30 | Partly Cloudy (Day) | 26 |
+| 33 | Fair (Night) | 31 |
+| 34 | Fair (Day) | 32 |
+| 35 | Mixed Rain and Hail | 17 |
+| 36 | Hot | 32 |
+| 37 | Isolated Thunderstorms | 3 |
+| 38 | Scattered Thunderstorms (Night) | 3 |
+| 39 | Scattered Thunderstorms (Day) | 3 |
+| 40 | Scattered Showers | 12 |
+| 41 | Heavy Snow (Night) | 13 |
+| 42 | Scattered Snow Showers | 13 |
+| 43 | Heavy Snow (Day) | 13 |
+| 44 | Partly Cloudy | 26 |
+| 45 | Thundershowers | 3 |
+| 46 | Snow Showers | 13 |
+| 47 | Isolated Thundershowers | 3 |
 
 ---
 
-## Contributing
+## File Naming Convention
 
-Contributions are welcome, particularly for conditions that are underpopulated.
+Files within each folder follow a prefixed zero-padded sequential naming scheme:
 
-### Image Requirements
+```
+resources/
+  0/
+    0-000.jpg
+    0-001.jpg
+    ...
+  3/
+    3-000.jpg
+    3-001.jpg
+    ...
+  na/
+    na-000.jpg
+    ...
+  alert/
+    alert-000.jpg
+    ...
+```
+
+> **Note on folder names:** Kodi's resource addon system uses unpadded integers for condition code folders—`0`, `1`, `2`—not zero-padded values like `00`, `01`, `02`. This is a Kodi convention and must be followed exactly or the images will not be found at runtime.
+
+---
+
+## Image Requirements
 
 | Attribute  | Requirement                                                        |
 |------------|--------------------------------------------------------------------|
@@ -152,39 +167,16 @@ Contributions are welcome, particularly for conditions that are underpopulated.
 | Subject    | Image should clearly convey the weather condition it represents    |
 | Source     | Any free-use or rights-cleared source (Pexels, Unsplash, etc.)     |
 
-### How to Contribute
-
-1. Fork the repository on GitHub
-2. Add images to the appropriate numbered folder under `resources/`
-3. Name files sequentially continuing from the last existing file (e.g., `012.jpg`)
-4. Open a pull request with a brief note on what condition(s) you're filling and the source URLs
-
-**Priority conditions (most needed):** `alert`, 26, 27, 29, 37, 38, 39, 40, 41, 42, 46, 47
-
 ---
 
-## Image Naming Convention
+## Contributing
 
-Files within each condition folder follow a zero-padded sequential naming scheme:
+Contributions are welcome. To add images:
 
-```
-resources/
-  0/
-    000.jpg
-    001.jpg
-    ...
-  1/
-    000.jpg
-    ...
-  na/
-    000.jpg
-    ...
-  alert/
-    000.jpg
-    ...
-```
-
-> **Note on folder names:** Kodi's resource addon system uses unpadded integers for condition code folders—`0`, `1`, `2`—not zero-padded values like `00`, `01`, `02`. This is a Kodi convention and must be followed exactly or the images will not be found at runtime.
+1. Fork the repository on GitHub
+2. Add images to the appropriate master folder under `resources/`
+3. Name files sequentially continuing from the last existing file (e.g., `3-054.jpg`)
+4. Open a pull request with a brief note on what condition(s) you're filling and the source URLs
 
 ---
 
