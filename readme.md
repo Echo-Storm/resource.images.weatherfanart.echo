@@ -85,12 +85,12 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 |     9 | Drizzle                         |    18 |     15 | ✔ good       |   —    |   ✔    |   ✗    |
 |    10 | Freezing Rain                   |    20 |     15 | ✔ good       |   5    |   ✔    |   ✗    |
 |    11 | Light Showers (Night)           |    23 |     20 | ✔ good       |   —    |   ✔    |   ✗    |
-|    12 | Heavy Showers (Day)             |    33 |     30 | ✔ good       |   —    |   ✔    |   ✗    |
+|    12 | Heavy Showers (Day)             |    33 |     30 | ✔ good       |   +    |   ✔    |   ✗    |
 |    13 | Snow Flurries                   |    43 |     25 | ✔ good       |   +    |   ✔    |   ✗    |
 |    14 | Light Snow Showers              |    43 |     25 | ✔ good       |   13   |   ✔    |   ✗    |
 |    15 | Blowing Snow                    |    43 |     25 | ✔ good       |   13   |   ✔    |   ✗    |
 |    16 | Snow                            |    43 |     25 | ✔ good       |   13   |   ✔    |   ✗    |
-|    17 | Hail                            |    13 |     10 | ✔ good       |   —    |   ✔    |   ✗    |
+|    17 | Hail                            |    13 |     10 | ✔ good       |   —    |   ✗    |   ✗    |
 |    18 | Sleet                           |    20 |     15 | ✔ good       |   5    |   ✔    |   ✗    |
 |    19 | Dust                            |    13 |     10 | ✔ good       |   —    |   ✔    |   ✗    |
 |    20 | Foggy                           |    25 |     20 | ✔ good       |   +    |   ✔    |   ✗    |
@@ -100,23 +100,23 @@ Images are organized by Yahoo weather condition code. Each condition maps to a n
 |    24 | Windy                           |    35 |     20 | ✔ good       |   23   |   ✔    |   ✗    |
 |    25 | Cold                            |    32 |     25 | ✔ good       |   —    |   ✔    |   ✗    |
 |    26 | Cloudy                          |    53 |     50 | ✔ good       |   +    |   ✔    |   ✗    |
-|    27 | Mostly Cloudy (Night)           |    11 |  20–30 | ▲ needs more |   —    |   ✗    |   ✗    |
+|    27 | Mostly Cloudy (Night)           |    54 |     50 | ✔ good       |   +    |   ✔    |   ✗    |
 |    28 | Mostly Cloudy (Day)             |    53 |     30 | ✔ good       |   26   |   ✔    |   ✗    |
-|    29 | Partly Cloudy (Night)           |     9 |  20–30 | ▲ needs more |   —    |   ✗    |   ✗    |
+|    29 | Partly Cloudy (Night)           |    54 |     50 | ✔ good       |   27   |   ✔    |   ✗    |
 |    30 | Partly Cloudy (Day)             |    53 |     50 | ✔ good       |   26   |   ✔    |   ✗    |
-|    31 | Clear (Night)                   |    23 |  20–30 | ✔ good       |   —    |   ✗    |   ✗    |
+|    31 | Clear (Night)                   |    33 |     30 | ✔ good       |   +    |   ✔    |   ✗    |
 |    32 | Sunny                           |    34 |  20–30 | ▼ high       |   —    |   ✗    |   ✗    |
-|    33 | Fair (Night)                    |    10 |  10–15 | ✔ good       |   —    |   ✗    |   ✗    |
+|    33 | Fair (Night)                    |    33 |     30 | ✔ good       |   33   |   ✔    |   ✗    |
 |    34 | Fair (Day)                      |    12 |  10–15 | ✔ good       |   —    |   ✗    |   ✗    |
 |    35 | Mixed Rain and Hail             |     7 |   5–10 | ✔ good       |   —    |   ✗    |   ✗    |
 |    36 | Hot                             |    11 |  10–15 | ✔ good       |   —    |   ✗    |   ✗    |
 |    37 | Isolated Thunderstorms          |    54 |     15 | ✔ good       |   3    |   ✔    |   ✗    |
 |    38 | Scattered Thunderstorms (Night) |    54 |     15 | ✔ good       |   3    |   ✔    |   ✗    |
 |    39 | Scattered Thunderstorms (Day)   |    54 |     15 | ✔ good       |   3    |   ✔    |   ✗    |
-|    40 | Scattered Showers               |     9 |  15–25 | ▲ needs more |   —    |   ✗    |   ✗    |
-|    41 | Heavy Snow (Night)              |    13 |  15–25 | ▲ needs more |   —    |   ✗    |   ✗    |
-|    42 | Scattered Snow Showers          |    11 |  15–25 | ▲ needs more |   —    |   ✗    |   ✗    |
-|    43 | Heavy Snow (Day)                |    18 |  15–25 | ✔ good       |   —    |   ✗    |   ✗    |
+|    40 | Scattered Showers               |    33 |     25 | ✔ good       |   12   |   ✔    |   ✗    |
+|    41 | Heavy Snow (Night)              |    43 |     25 | ✔ good       |   13   |   ✔    |   ✗    |
+|    42 | Scattered Snow Showers          |    43 |     25 | ✔ good       |   13   |   ✔    |   ✗    |
+|    43 | Heavy Snow (Day)                |    43 |     25 | ✔ good       |   13   |   ✔    |   ✗    |
 |    44 | Partly Cloudy                   |    53 |     50 | ✔ good       |   26   |   ✔    |   ✗    |
 |    45 | Thundershowers                  |    54 |     15 | ✔ good       |   3    |   ✔    |   ✗    |
 |    46 | Snow Showers                    |    43 |     25 | ✔ good       |   13   |   ✔    |   ✗    |
